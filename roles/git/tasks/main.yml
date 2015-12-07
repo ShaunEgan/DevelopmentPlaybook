@@ -1,9 +1,12 @@
 ---
 # tasks file for git
 - name: "Install git"
-  apt: name=git state=present
+  apt: pkg=git-core state=installed
 
 - name: "Install global gitignore"
-  copy: src=.gitignore dest="{{ gitignore_path }}" mode=0655
+  copy: src=.gitignore dest="{{ git_gitignore_path }}" mode=0655
 
-- name: "Configure git to use global ignore"
+- name: "Configure git"
+  template:
+    src=gitconfig.j2
+    dest={{ git_config_path }}

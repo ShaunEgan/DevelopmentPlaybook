@@ -1,0 +1,18 @@
+[core]
+    user = {{ git_username }}
+    email = {{ git_email }}
+    editor = {{ git_coreeditor }}
+    excludesfile = {{ git_gitignore_path }}
+[user]
+    name = {{ git_username }}
+    email = {{ git_email }}
+[color]
+  ui = true
+[alias]
+    l = "log --pretty=oneline"
+[merge]
+    tool = {{ git_mergetool }}
+[filter "lfs"]
+    clean = git-lfs clean %f
+    smudge = git-lfs smudge %f
+    required = true
