@@ -1,0 +1,4 @@
+---
+# tasks file for git
+- name: "Ensure that git is installed"
+  apt: name=git state=present
