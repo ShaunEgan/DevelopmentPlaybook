@@ -1,22 +1,19 @@
-Role Name
+Git
 =========
 
-A brief description of the role goes here.
+Sets up git with global gitignore and configuration
 
-Requirements
-------------
-
-Any pre-requisites that may not be covered by Ansible itself or the role should be mentioned here. For instance, if the role uses the EC2 module, it may be a good idea to mention in this section that the boto package is required.
 
 Role Variables
 --------------
 
-A description of the settable variables for this role should go here, including any variables that are in defaults/main.yml, vars/main.yml, and any variables that can/should be set via parameters to the role. Any variables that are read from other roles and/or the global scope (ie. hostvars, group vars, etc.) should be mentioned here as well.
+The following variables are available to configure your git instance with:
 
-Dependencies
-------------
-
-A list of other roles hosted on Galaxy should go here, plus any details in regards to parameters that may need to be set for other roles, or variables that are used from other roles.
+* **git_os_user** - The username used to build the path for the user's home directory
+* **git_username** - Standard git configuration username
+* **git_email** -  Standard git configuration email
+* **git_coreeditor** - Standard git configuration core editor
+* **git_mergetool** - Standard git configuration merge tool
 
 Example Playbook
 ----------------
@@ -24,15 +21,23 @@ Example Playbook
 Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
 
     - hosts: servers
+      
+      vars:
+        - git_os_user: "bob"
+          git_username: "Bob Belchers"
+          git_email: "bob_belcher_555@email.com"
+          git_coreeditor: "vim"
+          git_mergetool: "emerge"
+      
       roles:
-         - { role: username.rolename, x: 42 }
+         - git
 
 License
 -------
 
-BSD
+MIT
 
 Author Information
 ------------------
 
-An optional section for the role authors to include contact information, or a website (HTML is not allowed).
+Shaun Egan (shauneganza@gmail.com)

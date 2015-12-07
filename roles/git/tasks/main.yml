@@ -9,4 +9,4 @@
 - name: "Configure git"
   template:
     src=gitconfig.j2
-    dest={{ git_config_path }}
+    dest="/home/{{ git_os_user }}/.gitconfig"

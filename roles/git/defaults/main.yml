@@ -1,5 +1,6 @@
 ---
 # defaults file for git
+git_os_user: "user"
 git_username: "Your Username"
 git_email: "your@email.com"
 git_coreeditor: "vim"
