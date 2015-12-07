@@ -1,2 +1,6 @@
 ---
 # defaults file for git
+git_username: "Your Username"
+git_email: "your@email.com"
+git_coreeditor: "vim"
+git_mergetool: "emerge"

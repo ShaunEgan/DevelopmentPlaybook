@@ -2,7 +2,3 @@
 # vars file for git
 git_config_path: "/home/shaun/.gitconfig"
 git_gitignore_path: "/opt/.gitignore"
-git_username: "Shaun Egan"
-git_email: "shaun@nonacreative.com"
-git_coreeditor: "vim"
-git_mergetool: "emerge"
