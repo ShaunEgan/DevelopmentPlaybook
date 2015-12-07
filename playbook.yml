@@ -1,6 +1,10 @@
 ---
-- hosts: development
+- hosts: all
 
   roles:
     - ssh
+
+- hosts: development
+
+  roles:
     - git
