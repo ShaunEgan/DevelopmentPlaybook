@@ -6,10 +6,10 @@
 - name: "Install global gitignore"
   copy:
     src=.gitignore
-    dest="/home/{{ git_os_user }}/.gitignore"
+    dest="/home/{{ os_user }}/.gitignore"
     mode=0655
 
 - name: "Configure git"
   template:
     src=gitconfig.j2
-    dest="/home/{{ git_os_user }}/.gitconfig"
+    dest="/home/{{ os_user }}/.gitconfig"
