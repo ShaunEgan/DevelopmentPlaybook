@@ -14,5 +14,5 @@
 - name: Ensure public keys are installed
   authorized_key:
     user={{ os_user }}
-    key="{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
+    key="{{ lookup('file', os_user_public_key) }}"
   notify: restart ssh

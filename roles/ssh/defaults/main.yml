@@ -1,3 +1,4 @@
 ---
 # defaults file for ssh
 os_user: "user"
+os_user_public_key: "~/.ssh/id_rsa.pub"
