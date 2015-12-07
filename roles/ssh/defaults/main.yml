@@ -1,2 +1,3 @@
 ---
 # defaults file for ssh
+os_user: "user"
