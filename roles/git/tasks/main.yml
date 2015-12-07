@@ -1,4 +1,9 @@
 ---
 # tasks file for git
-- name: "Ensure that git is installed"
+- name: "Install git"
   apt: name=git state=present
+
+- name: "Install global gitignore"
+  copy: src=.gitignore dest="{{ gitignore_path }}" mode=0655
+
+- name: "Configure git to use global ignore"
