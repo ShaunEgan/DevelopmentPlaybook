@@ -1,22 +1,20 @@
-Role Name
+SSH
 =========
 
-A brief description of the role goes here.
+Adds a user to the host and installs a public key for that user
 
 Requirements
 ------------
 
-Any pre-requisites that may not be covered by Ansible itself or the role should be mentioned here. For instance, if the role uses the EC2 module, it may be a good idea to mention in this section that the boto package is required.
+SSH
 
 Role Variables
 --------------
 
-A description of the settable variables for this role should go here, including any variables that are in defaults/main.yml, vars/main.yml, and any variables that can/should be set via parameters to the role. Any variables that are read from other roles and/or the global scope (ie. hostvars, group vars, etc.) should be mentioned here as well.
+The following variables are available to configure your ssh instance with:
 
-Dependencies
-------------
-
-A list of other roles hosted on Galaxy should go here, plus any details in regards to parameters that may need to be set for other roles, or variables that are used from other roles.
+* **os_user** - The username used to build the path for the user's home directory
+* **os_user_public_key** - The path to the public key to use, default is `~/.ssh/id_rsa.pub` 
 
 Example Playbook
 ----------------
@@ -24,15 +22,20 @@ Example Playbook
 Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
 
     - hosts: servers
-      roles:
-         - { role: username.rolename, x: 42 }
+          
+          vars:
+            os_user: "bob"
+            os_user_public_key: "~/repositories/keys/my-key.pub"
+          
+          roles:
+             - ssh
 
 License
 -------
 
-BSD
+MIT
 
 Author Information
 ------------------
 
-An optional section for the role authors to include contact information, or a website (HTML is not allowed).
+Shaun Egan (shauneganza@gmail.com)
