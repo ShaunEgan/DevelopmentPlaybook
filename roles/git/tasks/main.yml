@@ -4,7 +4,10 @@
   apt: pkg=git-core state=installed
 
 - name: "Install global gitignore"
-  copy: src=.gitignore dest="{{ git_gitignore_path }}" mode=0655
+  copy:
+    src=.gitignore
+    dest="/home/{{ git_os_user }}/.gitignore"
+    mode=0655
 
 - name: "Configure git"
   template:
