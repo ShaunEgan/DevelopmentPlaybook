@@ -8,5 +8,4 @@
 
   roles:
     - git
-    - docker
-    - python-pip
+    - docker-compose
