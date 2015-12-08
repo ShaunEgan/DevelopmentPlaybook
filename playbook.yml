@@ -9,3 +9,4 @@
   roles:
     - git
     - docker
+    - python-setuptools

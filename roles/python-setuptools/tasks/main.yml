@@ -1,0 +1,4 @@
+---
+# tasks file for python-setuptools
+- name: "Install python setuptools"
+  apt: pkg=python-setuptools state=present
