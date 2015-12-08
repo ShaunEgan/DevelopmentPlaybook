@@ -1,0 +1,3 @@
+---
+# defaults file for docker
+ubuntu_version_name: "trusty"

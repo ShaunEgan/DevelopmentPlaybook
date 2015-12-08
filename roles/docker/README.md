@@ -7,6 +7,10 @@ Example Playbook
 ----------------
 
     - hosts: servers
+
+      vars:
+        ubuntu_version_name: "trusty"
+
       roles:
          - docker
 
