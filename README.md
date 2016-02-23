@@ -5,7 +5,7 @@ few packages represent a very common subset of most development instances.
 
 ### Designed for extension
 
-While this playbook handles some common boiler plate dev tools, it will be much more useful when extended to your 
+While this playbook handles some common boilerplate dev tools, it will be much more useful when extended to your 
 environment. 
 
 ### Usage
