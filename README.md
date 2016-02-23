@@ -31,7 +31,7 @@ the `roles` directory. A sample configuration will look something like:
 ansible_ssh_user: root
 os_user: "shaun"
 git_username: "Shaun Egan"
-git_email: "shaun@nonacreative.com"
+git_email: "shauneganza@gmail.com"
 git_coreeditor: "vim"
 git_mergetool: "emerge"
 ubuntu_version_name: "trusty"
