@@ -15,7 +15,7 @@ need to configure the roles by creating a `development.yml` file within the `gro
 will be as follows:
 
 ```
-DevelopementPlaybook/
+DevelopmentPlaybook/
 ├── group-vars/
 │   └── development.yml
 ├── roles/
