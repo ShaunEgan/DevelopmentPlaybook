@@ -23,7 +23,7 @@ DevelopmentPlaybook/
 └── playbook.yml
 ```
 
-You `development.yml` configures various options for the host. These options can be explored in the documentation within
+Your `development.yml` configures various options for the host. These options can be explored in the documentation within
 the `roles` directory. A sample configuration will look something like:
 
 ```yml
