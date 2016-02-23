@@ -47,3 +47,7 @@ like:
 
 You will also require a `group_vars` directory for specifying some of the options built into the roles. The directory 
 structure for this will be something like:
+
+## Licence
+
+MIT
